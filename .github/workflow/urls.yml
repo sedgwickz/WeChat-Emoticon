@@ -1,0 +1,11 @@
+name: 'get urls'
+
+on: issues
+
+jobs:
+  job1:
+    name: first step
+    runs-on: ubuntu-latest
+    defaults:
+      shell: bash
+      run: ls
