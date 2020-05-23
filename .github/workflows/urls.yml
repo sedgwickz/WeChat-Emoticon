@@ -7,12 +7,13 @@ jobs:
     name: first step
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v2
       - shell: bash
         run: |
           echo 'start get urls'
           find . -name "*.gif" > urls.txt
       - name: download txt file
-        uses: actions/upload-artifact@v1
+        uses: actions/upload-artifact@v2
         with:
           name: homework
           path: urls.txt
