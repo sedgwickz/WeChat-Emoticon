@@ -7,8 +7,12 @@ jobs:
     name: first step
     runs-on: ubuntu-latest
     steps:
-      - name: start parsing...
-        shell: bash
+      - shell: bash
         run: |
           echo 'start get urls'
-          find . -name "*.gif"
+          find . -name "*.gif" > urls.txt
+      - name: download txt file
+        uses: actions/upload-artifact@v1
+        with:
+          name: homework
+          path: urls.txt
