@@ -8,6 +8,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: start parsing...
+        shell: bash
         run: |
           echo 'start get urls'
           ls
+          pwd
