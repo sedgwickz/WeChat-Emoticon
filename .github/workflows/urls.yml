@@ -1,4 +1,4 @@
-name: UrlParser
+name: url parse
 
 on: issues
 
@@ -6,6 +6,8 @@ jobs:
   job1:
     name: first step
     runs-on: ubuntu-latest
-    defaults:
-      shell: bash
-      run: ls
+    steps:
+      - name: start parsing...
+        run: |
+          echo 'start get urls'
+          ls
