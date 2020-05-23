@@ -11,5 +11,4 @@ jobs:
         shell: bash
         run: |
           echo 'start get urls'
-          ls
-          pwd
+          find . -name "*.gif"
