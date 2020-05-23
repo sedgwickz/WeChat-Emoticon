@@ -1,6 +1,6 @@
 name: url parse
 
-on: issues
+on: push
 
 jobs:
   job1:
